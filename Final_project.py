@@ -19,13 +19,13 @@ except ImportError:
 #Cleans the terminal
 
 def clear_screen():
-    """Clears the terminal screen. Equivalent to 'system("cls")' in your code."""
+    """Clears the terminal screen."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 #TIC-TAC-TOE Game Functions
 
 def display_tic_tac_toe_board(board):
-    """Prints the Tic-Tac-Toe board to the screen. Equivalent to your printTabuleiro() function."""
+    """Prints the Tic-Tac-Toe board to the screen."""
     clear_screen()
     print("\n\t=============== Tic-Tac-Toe ===============\n")
     print(f" {board[0][0]} | {board[0][1]} | {board[0][2]} ")
@@ -35,7 +35,7 @@ def display_tic_tac_toe_board(board):
     print(f" {board[2][0]} | {board[2][1]} | {board[2][2]} \n")
 
 def check_tic_tac_toe_winner(board):
-    """Checks rows, columns, and diagonals. Equivalent to your checarVencedor() function."""
+    """Checks rows, columns, and diagonals."""
     # Check rows and columns
     for i in range(3):
         if board[i][0] == board[i][1] == board[i][2] and board[i][0] != ' ':
